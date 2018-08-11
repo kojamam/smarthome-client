@@ -1,0 +1,22 @@
+{
+  "name": "smarthome-client",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyamuise/smarthome-client.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyamuise/smarthome-client/issues"
+  },
+  "homepage": "https://github.com/kyamuise/smarthome-client#readme",
+  "dependencies": {
+    "websocket": "~1.0.26"
+  }
+}
