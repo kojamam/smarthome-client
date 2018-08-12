@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/kyamuise/smarthome-client#readme",
   "dependencies": {
+    "broadlinkjs-rm": "^0.6.0",
+    "dotenv": "^6.0.0",
     "websocket": "~1.0.26"
   }
 }
