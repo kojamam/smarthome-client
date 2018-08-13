@@ -1,6 +1,8 @@
 const dotenv = require('dotenv');
 var WebSocketClient = require('websocket').client;
 const exec = require('child_process').exec;
+const sendSignal = require('./lib/sendSignal');
+const signals = require('./config/signals');
 
 dotenv.config();
 var client = new WebSocketClient();
@@ -24,11 +26,15 @@ client.on('connect', function (connection) {
     });
     connection.on('message', function (message) {
         if (message.type === 'utf8') {
+            let messageJson = JSON.parse(message);
             console.log("Received: '" + message.utf8Data + "'");
-            exec('python /Users/Koji/dev/smart_home/BlackBeanControl/BlackBeanControl.py -c light-on', (err, stdout, stderr) => {
-                if (err) { console.log(err); }
-                console.log(stdout);
-            });
+
+            //TODO errot handring
+            sendSignal(signals[messageJson.command]);
+            // exec('python /Users/Koji/dev/smart_home/BlackBeanControl/BlackBeanControl.py -c light-on', (err, stdout, stderr) => {
+            //     if (err) { console.log(err); }
+            //     console.log(stdout);
+            // });
         }
     });
 });
