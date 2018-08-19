@@ -1,0 +1,26 @@
+{
+  "name": "smarthome-client",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyamuise/smarthome-client.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyamuise/smarthome-client/issues"
+  },
+  "homepage": "https://github.com/kyamuise/smarthome-client#readme",
+  "dependencies": {
+    "broadlinkjs-rm": "^0.6.0",
+    "dotenv": "^6.0.0",
+    "ping": "^0.2.2",
+    "websocket": "~1.0.26"
+  }
+}
