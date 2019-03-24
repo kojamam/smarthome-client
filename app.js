@@ -40,7 +40,7 @@ client.on('connect', function (connection) {
 });
 
 const connect = () => {
-    client.connect(host, 'khp', process.env.ORIGIN);
+    client.connect(host, 'hcp', process.env.ACCESS_TOKEN); //hcp=home control protocol
 }
 
 const setRecconectTimer = () => {
