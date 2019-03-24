@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kyamuise/smarthome-client.git"
+    "url": "git+https://github.com/kojamam/smarthome-client.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kyamuise/smarthome-client/issues"
+    "url": "https://github.com/kojamam/smarthome-client/issues"
   },
-  "homepage": "https://github.com/kyamuise/smarthome-client#readme",
+  "homepage": "https://github.com/kojamam/smarthome-client#readme",
   "dependencies": {
     "broadlinkjs-rm": "^0.6.0",
     "dotenv": "^6.0.0",
