@@ -25,12 +25,10 @@ client.on('connect', function (connection) {
         setRecconectTimer();
     });
     connection.on('message', function (message) {
-        console.log(message);
         if (message.type === 'utf8') {
             console.log("Received: '" + message.utf8Data + "'");
             let messageJson = JSON.parse(message.utf8Data);
             //TODO error handling
-            console.log(messageJson.commands);
             messageJson.commands.forEach(command => {
                 sendData(signals[command]);
 
